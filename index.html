@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice Input and Stress Prediction</title>
+</head>
+<body>
+    <h1>Voice Input and Stress Prediction</h1>
+    <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+        <label for="voice_input">Voice Input:</label>
+        <input type="file" id="voice_input" name="voice_input" accept="audio/*" capture>
+        <br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
